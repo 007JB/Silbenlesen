@@ -2,8 +2,6 @@ package silbenlesen.gui;
 
 import java.util.List;
 
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IToolBarManager;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -54,7 +52,8 @@ public class SilbenView extends ViewPart implements IModelChangeListener {
   // }
   // }
   //
-  // class ViewLabelProvider extends LabelProvider implements ITableLabelProvider {
+  // class ViewLabelProvider extends LabelProvider implements
+  // ITableLabelProvider {
   // @Override
   // public String getColumnText(Object obj, int index) {
   // return getText(obj);
@@ -67,7 +66,8 @@ public class SilbenView extends ViewPart implements IModelChangeListener {
   //
   // @Override
   // public Image getImage(Object obj) {
-  // return PlatformUI.getWorkbench().getSharedImages().getImage(ISharedImages.IMG_OBJ_ELEMENT);
+  // return
+  // PlatformUI.getWorkbench().getSharedImages().getImage(ISharedImages.IMG_OBJ_ELEMENT);
   // }
   // }
   /**
@@ -182,14 +182,16 @@ public class SilbenView extends ViewPart implements IModelChangeListener {
    * Initialize the toolbar.
    */
   private void initializeToolBar() {
-    IToolBarManager tbm = getViewSite().getActionBars().getToolBarManager();
+    // IToolBarManager tbm =
+    getViewSite().getActionBars().getToolBarManager();
   }
 
   /**
    * Initialize the menu.
    */
   private void initializeMenu() {
-    IMenuManager manager = getViewSite().getActionBars().getMenuManager();
+    // IMenuManager manager =
+    getViewSite().getActionBars().getMenuManager();
   }
 
   @Override
@@ -212,7 +214,8 @@ public class SilbenView extends ViewPart implements IModelChangeListener {
     // // Move the dialog to the center of the top level shell.
     // Rectangle shellBounds = _parent.getShell().getBounds();
     // Point dialogSize = mb.get
-    // dialog.setLocation(shellBounds.x + (shellBounds.width - dialogSize.x) / 2, shellBounds.y + (shellBounds.height - dialogSize.y) / 2);
+    // dialog.setLocation(shellBounds.x + (shellBounds.width - dialogSize.x)
+    // / 2, shellBounds.y + (shellBounds.height - dialogSize.y) / 2);
     // open
     mb.open();
     fillContainer(_parent); // restart
